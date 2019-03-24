@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script type="text/javascript" th:src="@{/jquery/jquery-3.2.1.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/boostrap/bootstrap-4.2.1-dist/css/bootstrap.min.css}" type="text/css">
+</head>
+<body>
+<div class="container m-auto">
+    <form class="form-horizontal"   th:action="@{/login}"  method="post">
+        <div class="form-group">
+            <label for="userName" class="col-sm-2 control-label">userName:</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="username"  id="username" placeholder="userName"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label" >Password:</label>
+            <div class="col-sm-5">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="Submit" class="btn btn-info" />&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset" class="btn btn-info" />
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+</html>
